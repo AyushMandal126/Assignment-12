@@ -1,0 +1,42 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Car {
+private:
+    string Brand;
+    float Price;
+
+public:
+
+
+Car(string l, float b) {
+        Brand = l;
+        Price = b;
+    }
+
+
+   
+
+
+  
+    void displayValues() {
+        cout << "The car is of the brand " << Brand
+             << " and its price is $" <<  Price<< endl;
+    
+    }
+};
+
+int main() {
+    
+    Car car1("Mercedes" , 300000); 
+    car1.displayValues();
+
+   Car car2("BMW" , 500000); 
+    car2.displayValues();
+
+
+    return 0;
+}
+
+
