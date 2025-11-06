@@ -1,0 +1,54 @@
+#include <iostream>
+using namespace std;
+
+class Box {
+private:
+    float length;
+    float breadth;
+    float height;
+
+public:
+Box() {
+    length = 0;
+    breadth = 0;
+    height=0;
+}
+
+Box(float b) {
+    length = 0;
+    breadth = b;
+    height = 0;
+}
+
+Box(float l, float b, float h) {
+       length = l;
+       breadth = b;
+       height = h;
+    }
+
+
+   
+
+
+  
+    void displayValues() {
+    cout<< "The box has length "<<length<<" cm, breadth "<<breadth<<" cm, and height "<<height<<"cm." <<endl;
+    }
+};
+
+int main() {
+    
+   Box box1; 
+    box1.displayValues();
+
+   Box box2(3); 
+    box2.displayValues();
+    
+   Box box3(1.2,3.456,0.23); 
+    box3.displayValues();
+
+
+    return 0;
+}
+
+
