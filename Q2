@@ -1,0 +1,55 @@
+#include <iostream>
+using namespace std;
+
+class Complex {
+private:
+    float real;
+    float imaginary;
+
+public:
+Complex() {
+    real = 0;
+    imaginary = 0;
+}
+
+Complex(float r) {
+    real = r;
+    imaginary = 0;
+}
+
+Complex(float r, float i) {
+        real = r;
+        imaginary = i;
+    }
+
+
+   
+
+
+  
+    void displayValues() {
+        if ( imaginary < 0){
+       cout<<"The complex number is "<<real<<" "<<imaginary<<"i"<<endl;
+    }
+    else {
+        cout<<"The complex number is "<<real<<" + "<<imaginary<<"i"<<endl;
+    }
+    }
+};
+
+int main() {
+    
+    Complex complex1; 
+    complex1.displayValues();
+
+   Complex complex2(2); 
+    complex2.displayValues();
+    
+     Complex complex3( -2,-8); 
+    complex3.displayValues();
+
+
+    return 0;
+}
+
+
